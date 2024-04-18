@@ -3,17 +3,19 @@
     box-sizing: border-box;
 }
 
-/* :root {
-    --main-color: #10cab7;
-    --sec-color: #2c4755;
-    --para-color: #777;
-} */
+:root {
+    --main-color: #0d0d0d;
+    --sec-color: #1f1f1f;
+    --para-color: white;
+    --div-color: #ed815f;
+}
 
 html {
     scroll-behavior: smooth;
 }
 
 body {
+    background-color: var(--main-color);
     font-family: "Work Sans", sans-serif;
 }
 
