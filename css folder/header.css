@@ -10,13 +10,16 @@
     color: var(--para-color);
     background-color: var(--main-color);
 }
+
 .header .first-nav .nav1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    width: 70%;
+    flex: 1;
+
 }
+
 .header .first-nav .nav1 ul {
     display: flex;
     align-items: center;
@@ -26,23 +29,25 @@
     margin: 0;
     background-color: var(--sec-color);
     border-radius: 20px;
-    
+
 }
 
 
 .header .first-nav .nav1 ul li a {
     border-radius: 20px;
-    padding:10px;
+    padding: 10px;
     text-decoration: none;
     color: var(--para-color2);
     display: block;
     font-size: 12px;
     transition: .3s;
 }
+
 .header .first-nav .nav1 ul li a:hover {
     background-color: #ddd;
     color: black;
 }
+
 .header .first-nav .search {
     display: flex;
     align-items: center;
@@ -50,19 +55,22 @@
     padding: 10px;
     width: 30%;
 }
+
 .header .first-nav .search .port {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
 }
+
 .header .first-nav .search .image {
     width: 50px;
-position: relative;
+    position: relative;
 
 }
+
 .header .first-nav .search .image img {
     width: 100%;
     height: 100%;
-    position: absolute;
+    /* position: absolute; */
 }
