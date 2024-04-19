@@ -1,6 +1,4 @@
 .header .first-nav {
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #e9ecef;
     padding: 0;
     margin: 0;
     display: flex;
@@ -10,14 +8,17 @@
     color: var(--para-color);
     background-color: var(--main-color);
 }
-
+.header .first-nav .logo{
+    font-weight: bold;
+    font-size: 18px;
+}
 .header .first-nav .nav1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
     flex: 1;
-
+    margin-right: 40px;
 }
 
 .header .first-nav .nav1 ul {
@@ -29,18 +30,34 @@
     margin: 0;
     background-color: var(--sec-color);
     border-radius: 20px;
-
 }
 
 
 .header .first-nav .nav1 ul li a {
     border-radius: 20px;
-    padding: 10px;
+    padding: 12px 20px;
     text-decoration: none;
     color: var(--para-color2);
     display: block;
     font-size: 12px;
     transition: .3s;
+}
+
+.header .first-nav .nav1 .active {
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+.header .first-nav .nav1 .active::after {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: var(--div-color);
 }
 
 .header .first-nav .nav1 ul li a:hover {
@@ -51,26 +68,239 @@
 .header .first-nav .search {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 10px;
     width: 30%;
+}
+
+.header .first-nav .search .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80px;
+    margin-right: 15px;
+
+}
+
+.header .first-nav .search .icons i {
+    font-size: 15px;
+    color: var(--para-color2);
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid #ddd;
 }
 
 .header .first-nav .search .port {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 3px;
+    background-color: var(--sec-color);
+    border-radius: 25px;
+    width: fit-content;
+}
 
+
+.header .search .port .text p {
+    font-size: 14px;
+    margin-bottom: -1px;
+    margin-top: 0;
+}
+
+.header .search .port .text span {
+    font-size: 12px;
+    color: var(--para-color2);
+}
+
+.header .search .port .all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .first-nav .search .port .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
 }
 
 .header .first-nav .search .image {
-    width: 50px;
+    width: 40px;
     position: relative;
-
 }
 
 .header .first-nav .search .image img {
+    border-radius: 50%;
     width: 100%;
     height: 100%;
-    /* position: absolute; */
+}
+
+.header .track-list {
+    margin-top: 30px;
+    height: 80px;
+    color: white;
+}
+
+.header .track-list .cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .track-list .heading {
+    width: 30%;
+}
+
+.header .track-list .heading h1 {
+    font-size: 38px;
+}
+
+.header .track-list .box-holder {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+.header .track-list .box-holder .box {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    width: 250px;
+}
+
+
+.header .track-list .box-holder .box .icon {
+    font-size: 25px;
+    background-color: var(--sec-color);
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-right: 10px;
+    color: var(--para-color2);
+}
+
+.header .track-list .box .text p {
+    font-size: 14px;
+    color: var(--para-color2);
+}
+
+.header .track-list .box .numbers {
+    display: flex;
+    margin-top: 20px;
+    align-items: flex-end;
+}
+
+.header .track-list .box .numbers p {
+    color: var(--para-color);
+    font-size: 34px;
+}
+
+.header .track-list .box .numbers span {
+    font-size: 10px;
+    color: #419959;
+    margin-left: 15px;
+}
+.header .track-list .box .numbers .red{
+    
+    color: var(--div-color);
+}
+.header .side-filter {
+    margin-top: 50px;
+}
+.header .side-filter .container{
+    padding: 5px;
+    display: flex;
+    background-color: var(--sec-color);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+
+}
+.header .side-filter .container .side1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.header .side-filter .side1 .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #333333;
+    color: var(--para-color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .side-filter .side1 h3 {
+    color: var(--para-color);
+}
+.header .side-filter .side1 span {
+    color: var(--para-color2);
+    font-size: 12px;
+}
+.header .side-filter .side2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.header .side-filter .side2 .text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+
+}
+.header .side-filter .side2 .text p{
+    font-size: 12px;
+    color: var(--para-color);
+}
+.header .side-filter .side2 .text i {
+    color: #643937;
+}
+.header .side-filter .side2 .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    
+}
+.header .side-filter .side2 .icons .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1f1f1f;
+    color: var(--para-color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #9b9b9b;
+
+}
+.header .side-filter .side2 .buttons{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .side-filter .side2 .buttons button {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #9b9b9b;
+    color: var(--para-color);
+    background-color: #1f1f1f;
+    font-size: 12px;
+    cursor: pointer;
+}
+.header .side-filter .side2 .buttons .colored {
+    
+    background-color: var(--div-color);
+    color: black;
+    border: none;
 }
