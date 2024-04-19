@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css folder/all.min.css">
     <link rel="stylesheet" href="./css folder/all.min.css">
+    <link rel="stylesheet" href="./css folder/footer.css">
+    <!-- <link rel="stylesheet" href="./css folder/index.css"> -->
     <title>Document</title>
 </head>
 <body>
@@ -40,37 +42,64 @@
 
         </section>
         <section class="footer">
-            <div class="left_head">
-                <h3>Recent Activities</h3>
-                <div class="fields">
-                    <div><a href="#">All</a></div>
-                    <div><a href="#">Delivered</a></div>
-                    <div><a href="#">In transit</a></div>
-                    <div><a href="#">Pending</a></div>
-                    <div><a href="#">Processing</a></div>
+            <div class="left_side">
+                <div class="left">
+                    <h3>Recent Activities</h3>
+                    <ul>
+                        <li class="active"><a href="#">All</a></li>
+                        <li><a href="#">Delivered</a></li>
+                        <li><a href="#">In transit</a></li>
+                        <li><a href="#">Pending</a></li>
+                        <li><a href="#">Processing</a></li>
+                    </ul>
                 </div>
-                <span class="right_head">
-                    <i></i>
+                <span class="right_side">
+                    <i class="fa-solid fa-bars"></i>
                     <p>1-10 of 40</p>
-                    <i></i>
-                    <i></i>
+                    <i class="fa-solid fa-angle-left"></i>
+                    <i class="fa-solid fa-angle-right"></i>
                 </span>
             </div>
             <table>
                 <tr class="header">
                     <th></th>
-                    <th>Order ID</th>
-                    <th>Category</th>
-                    <th>Weight</th>
-                    <th>Company</th>
-                    <th>Arrival time</th>
-                    <th>Route</th>
-                    <th>Shipper</th>
-                    <th>Price</th>
-                    <th>Status</th>
+                    <th>Order ID <i class="fa-light fa-sort"></i></th>
+                    <th>Category <i class="fa-light fa-sort"></i></th>
+                    <th>Weight <i class="fa-light fa-sort"></i></th>
+                    <th>Company <i class="fa-light fa-sort"></i></th>
+                    <th>Arrival time <i class="fa-light fa-sort"></i></th>
+                    <th>Route <i class="fa-light fa-sort"></i></th>
+                    <th>Shipper <i class="fa-light fa-sort"></i></th>
+                    <th>Price <i class="fa-light fa-sort"></i></th>
+                    <th>Status <i class="fa-light fa-sort"></i></th>
                     <th></th>
                 </tr>
-                
+                <tr>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td>#12345678-5-f</td>
+                    <td>Electronic</td>
+                    <td>2.600 t</td>
+                    <td>Generic SO.</td>
+                    <td>6th July, 2023</td>
+                    <td>London . Progue</td>
+                    <td>DHL</td>
+                    <td>$5.678.00</td>
+                    <td>Delivered</td>
+                    <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td>#12345678-2-s</td>
+                    <td>Building materials</td>
+                    <td>6.568 t</td>
+                    <td>Abuilding CO.</td>
+                    <td>2th July, 2023</td>
+                    <td>Berlin . Poznon</td>
+                    <td>Amazon</td>
+                    <td>$12.500.00</td>
+                    <td>Delivered</td>
+                    <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                </tr>
             </table>
         </section>
     </main>
