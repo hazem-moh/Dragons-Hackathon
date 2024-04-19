@@ -43,6 +43,19 @@
     background-color: #ddd;
     color: black;
 }
+.header .first-nav .search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 30%;
+}
+.header .first-nav .search .port {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
 .header .first-nav .search .image {
     width: 50px;
 position: relative;
