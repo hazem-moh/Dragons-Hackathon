@@ -1,0 +1,275 @@
+.content {
+    margin-top: 40px;
+    height: 50vh;
+}
+.content .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.content .left-side {
+    width: 50%;
+    background-color: var(--sec-color);
+    border-radius: 25px;
+}
+
+.content .left-side .nav2 .logo {
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--para-color);
+}
+
+.content .left-side .nav2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    flex: 1;
+}
+
+.content .left-side .nav2 ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: var(--sec-color);
+    border-radius: 20px;
+}
+
+
+.content .left-side .nav2 ul li a {
+    border-radius: 20px;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: var(--para-color2);
+    display: block;
+    font-size: 12px;
+    transition: .3s;
+}
+
+.content .left-side .nav2 .active {
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+.content .left-side .nav2 .active::after {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: var(--div-color);
+}
+
+.content .left-side .nav2 ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.content .left-side .nav2 .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1f1f1f;
+    color: var(--para-color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #9b9b9b;
+}
+
+.content .left-side .cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--para-color);
+}
+
+.content .left-side .cont .box .text {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    padding: 5px 10px;
+}
+
+.content .left-side .cont .box .text p {
+    font-size: 36px;
+    margin-right: 10px;
+}
+
+.content .left-side .cont .box span {
+    color: var(--para-color2);
+    font-size: 12px;
+}
+
+.content .left-side table {
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.content .left-side table tr td:first-child {
+    font-size: 12px;
+    color: var(--para-color2);
+}
+
+.content .left-side table .mon td:not(:first-child) {
+    width: calc(100% / 15);
+    height: 30px;
+    background-color: var(--div-color);
+    border-radius: 10px;
+}
+
+.content .left-side table .mon td:nth-child(2),
+.content .left-side table .mon td:nth-child(3),
+.content .left-side table .mon td:nth-child(4),
+.content .left-side table .mon td:nth-child(5),
+.content .left-side table .mon td:nth-child(6),
+.content .left-side table .mon td:nth-child(9),
+.content .left-side table .mon td:nth-child(11),
+.content .left-side table .mon td:nth-child(13),
+.content .left-side table .mon td:nth-child(15) {
+    background-color: var(--first-color);
+}
+
+.content .left-side table .mon td:nth-child(7),
+.content .left-side table .mon td:nth-child(8),
+.content .left-side table .mon td:nth-child(10) {
+    background-color: var(--secend-color);
+}
+
+.content .left-side table .mon td:nth-child(14) {
+    background-color: var(--third-color);
+}
+
+.content .left-side table .tue td:not(:first-child) {
+    width: calc(100% / 15);
+    height: 30px;
+    border-radius: 10px;
+    background-color: var(--first-color);
+}
+
+.content .left-side table .tue td:nth-child(2),
+.content .left-side table .tue td:nth-child(8) {
+    background-color: var(--secend-color);
+}
+
+.content .left-side table .tue td:nth-child(6),
+.content .left-side table .tue td:nth-child(7),
+.content .left-side table .tue td:nth-child(9),
+.content .left-side table .tue td:nth-child(10),
+.content .left-side table .tue td:nth-child(13),
+.content .left-side table .tue td:nth-child(14) {
+    background-color: var(--third-color);
+}
+
+.content .left-side table .wed td:not(:first-child) {
+    width: calc(100% / 15);
+    height: 30px;
+    background-color: var(--first-color);
+    border-radius: 10px;
+}
+
+.content .left-side table .wed td:nth-child(3),
+.content .left-side table .wed td:nth-child(4),
+.content .left-side table .wed td:nth-child(10),
+.content .left-side table .wed td:nth-child(12),
+.content .left-side table .wed td:nth-child(14) {
+    background-color: var(--third-color);
+}
+
+.content .left-side table .wed td:nth-child(7),
+.content .left-side table .wed td:nth-child(8) {
+    background-color: var(--secend-color);
+}
+
+.content .left-side table .thu td:not(:first-child) {
+    width: calc(100% / 15);
+    height: 30px;
+    background-color: var(--third-color);
+    border-radius: 10px;
+}
+.content .left-side table .thu td:nth-child(3),
+.content .left-side table .thu td:nth-child(5),
+.content .left-side table .thu td:nth-child(10)
+{
+    background-color: var(--first-color);
+}
+.content .left-side table .thu td:nth-child(7),
+.content .left-side table .thu td:nth-child(8),
+.content .left-side table .thu td:nth-child(12),
+.content .left-side table .thu td:nth-child(14){
+    background-color: var(--secend-color);
+}
+.content .left-side table .fri td:not(:first-child) {
+    width: calc(100% / 15);
+    height: 30px;
+    background-color: var(--first-color);
+    border-radius: 10px;
+}
+.content .left-side table .fri td:nth-child(2),
+.content .left-side table .fri td:nth-child(3){
+    background-color: var(--secend-color);
+}
+.content .left-side table .fri td:nth-child(8),
+.content .left-side table .fri td:nth-child(11),
+.content .left-side table .fri td:nth-child(13),
+.content .left-side table .fri td:nth-child(14){
+    background-color: var(--third-color);
+}
+.content .left-side table .sat td:not(:first-child) {
+    width: calc(100% / 15);
+    height: 30px;
+    border-radius: 10px;
+}
+.content .left-side table .sat td:nth-child(5),
+.content .left-side table .sat td:nth-child(7),
+.content .left-side table .sat td:nth-child(10),
+.content .left-side table .sat td:nth-child(11),
+.content .left-side table .sat td:nth-child(13){
+    background-color: var(--first-color);
+}
+.content .left-side table .sat td:nth-child(3),
+.content .left-side table .sat td:nth-child(4){
+    background-color: var(--secend-color);
+    
+}
+.content .left-side table .sat td:nth-child(2){
+    background-color: var(--third-color);
+}
+.content .left-side table .sun td:not(:first-child) {
+    width: calc(100% / 15);
+    height: 30px;
+    border-radius: 10px;
+}
+.content .left-side table .sun td:nth-child(4),
+.content .left-side table .sun td:nth-child(8),
+.content .left-side table .sun td:nth-child(11),
+.content .left-side table .sun td:nth-child(14),
+.content .left-side table .sun td:nth-child(15){
+    background-color: var(--first-color);
+}
+
+.content .right-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    background-color: var(--sec-color);
+    border-radius: 25px;
+}
+.content .right-side .box1 {
+    padding: 10px;
+    background-color: var(--sec-color);
+}
+.content .right-side .box1 .hed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
