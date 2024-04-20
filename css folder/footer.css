@@ -1,4 +1,3 @@
-
 .footer .container {
     padding-left: 15px;
     padding-right: 15px;
@@ -18,13 +17,16 @@
     justify-content: space-between;
 }
 .footer .Nav_left ul {
-    padding-left: 15px;
+    padding: 10px 15px;
+    font-size: 13px;
+    margin: 5px;
 }
+
 .footer .Nav_left .active {
     position: relative;
     border: 1px solid #ddd;
-    border-radius: 14px;
-    padding: 5px 15px;
+    border-radius: 20px;
+    padding:10px 15px;
 }
 
 .footer .Nav_left .active::after {
@@ -32,18 +34,24 @@
     position: absolute;
     width: 7px;
     height: 7px;
-    left: 3.5px;
+    left: 4px;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50%;
     background-color: var(--div-color);
 
 }
+.footer .Nav_left ul li:hover {
+    color: black;
+    background-color: #ddd;
+    
+}
 
 .footer .Nav_left ul li {
     list-style-type: none;
     display: inline-block;
     padding: 7px;
+    border-radius: 20px;
 }
 
 .footer .Nav_left ul li a {
@@ -65,7 +73,7 @@
     width: 100%;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
-    font-size: 10px;
+    font-size: 11px;
 }
 .footer table .header{
     background-color: var(--sec-color);
