@@ -68,8 +68,6 @@
 .header .first-nav .search {
     display: flex;
     align-items: center;
-    padding: 10px;
-    width: 30%;
 }
 
 .header .first-nav .search .icons {
@@ -92,12 +90,11 @@
 
 .header .first-nav .search .port {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap: 3px;
+    gap: 5px;
     background-color: var(--sec-color);
-    border-radius: 25px;
-    width: fit-content;
+    border-radius: 20px;
+
 }
 
 
