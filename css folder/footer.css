@@ -1,24 +1,30 @@
 
-.footer .Nav {
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: var(--para-color);
-    margin-top: 300px;
+    margin-top: 85px;
 }
 .footer .Nav_left{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.footer .Nav_left ul {
+.Nav_left ul {
     padding-left: 15px;
 }
-.footer .Nav_left .active {
+.Nav_left .active {
     position: relative;
     border: 1px solid #ddd;
-    border-radius: 14px;
-    padding: 5px 15px;
+    border-radius: 20px;
+    padding:10px 15px;
 }
 
 .footer .Nav_left .active::after {
@@ -26,7 +32,7 @@
     position: absolute;
     width: 7px;
     height: 7px;
-    left: 3.5px;
+    left: 4px;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50%;
@@ -34,10 +40,11 @@
 
 }
 
-.footer .Nav_left ul li {
+.Nav_left ul li {
     list-style-type: none;
     display: inline-block;
     padding: 7px;
+    border-radius: 20px;
 }
 
 .footer .Nav_left ul li a {
@@ -59,14 +66,13 @@
     width: 100%;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
-    font-size: 10px;
+    font-size: 11px;
 }
 .footer table .header{
     background-color: var(--sec-color);
     color: var(--para-color);  
-    /* font-weight: bold; */
 }
-table .left {
+.footer table .left {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
