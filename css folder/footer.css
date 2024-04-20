@@ -1,33 +1,27 @@
 
-.container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.Nav {
+.footer .Nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: var(--para-color);
     margin-top: 300px;
 }
-.Nav_left{
+.footer .Nav_left{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.Nav_left ul {
+.footer .Nav_left ul {
     padding-left: 15px;
 }
-.Nav_left .active {
+.footer .Nav_left .active {
     position: relative;
     border: 1px solid #ddd;
     border-radius: 14px;
     padding: 5px 15px;
 }
 
-.Nav_left .active::after {
+.footer .Nav_left .active::after {
     content: '';
     position: absolute;
     width: 7px;
@@ -40,34 +34,34 @@
 
 }
 
-.Nav_left ul li {
+.footer .Nav_left ul li {
     list-style-type: none;
     display: inline-block;
     padding: 7px;
 }
 
-.Nav_left ul li a {
+.footer .Nav_left ul li a {
     color: var(--para-color);
     text-decoration: none;
 }
-.Nav_right {
+.footer .Nav_right {
     display: flex;
     justify-self: center;
     align-items: center;
     margin-right: 15px
 }
 
-.Nav_right i,p {
+.footer .Nav_right i,p {
     padding-right: 15px;
 }
-table {
+.footer table {
     color: var(--para-color);
     width: 100%;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
     font-size: 10px;
 }
-table .header{
+.footer table .header{
     background-color: var(--sec-color);
     color: var(--para-color);  
     /* font-weight: bold; */
@@ -76,22 +70,22 @@ table .left {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-table .right {
+.footer table .right {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-th {
+.footer th {
     background-color: var(--sec-color);
     font-weight: bold;
 }
 
-table th, td {
+.footer table th, td {
     padding: 15px ;
     text-align: center;
 }
 
 
-table tr .colored {
+.footer table tr .colored {
     color: green;    
     background-color:rgb(32, 69, 32, 50%);
     border-radius: 20px;
