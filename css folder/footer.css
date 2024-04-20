@@ -4,6 +4,7 @@
     align-items: center;
     color: var(--para-color);
     margin-top: 20px;
+    margin-bottom: 5px;
 }
 
 .footer .Nav_left {
