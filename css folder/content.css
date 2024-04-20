@@ -1,7 +1,9 @@
 .content {
     margin-top: 40px;
     height: 50vh;
+    margin-bottom: 40px;
 }
+
 .content .container {
     display: flex;
     align-items: center;
@@ -10,7 +12,7 @@
 }
 
 .content .left-side {
-    width: 50%;
+    width: 55%;
     background-color: var(--sec-color);
     border-radius: 25px;
 }
@@ -195,64 +197,74 @@
     background-color: var(--third-color);
     border-radius: 10px;
 }
+
 .content .left-side table .thu td:nth-child(3),
 .content .left-side table .thu td:nth-child(5),
-.content .left-side table .thu td:nth-child(10)
-{
+.content .left-side table .thu td:nth-child(10) {
     background-color: var(--first-color);
 }
+
 .content .left-side table .thu td:nth-child(7),
 .content .left-side table .thu td:nth-child(8),
 .content .left-side table .thu td:nth-child(12),
-.content .left-side table .thu td:nth-child(14){
+.content .left-side table .thu td:nth-child(14) {
     background-color: var(--secend-color);
 }
+
 .content .left-side table .fri td:not(:first-child) {
     width: calc(100% / 15);
     height: 30px;
     background-color: var(--first-color);
     border-radius: 10px;
 }
+
 .content .left-side table .fri td:nth-child(2),
-.content .left-side table .fri td:nth-child(3){
+.content .left-side table .fri td:nth-child(3) {
     background-color: var(--secend-color);
 }
+
 .content .left-side table .fri td:nth-child(8),
 .content .left-side table .fri td:nth-child(11),
 .content .left-side table .fri td:nth-child(13),
-.content .left-side table .fri td:nth-child(14){
+.content .left-side table .fri td:nth-child(14) {
     background-color: var(--third-color);
 }
+
 .content .left-side table .sat td:not(:first-child) {
     width: calc(100% / 15);
     height: 30px;
     border-radius: 10px;
 }
+
 .content .left-side table .sat td:nth-child(5),
 .content .left-side table .sat td:nth-child(7),
 .content .left-side table .sat td:nth-child(10),
 .content .left-side table .sat td:nth-child(11),
-.content .left-side table .sat td:nth-child(13){
+.content .left-side table .sat td:nth-child(13) {
     background-color: var(--first-color);
 }
+
 .content .left-side table .sat td:nth-child(3),
-.content .left-side table .sat td:nth-child(4){
+.content .left-side table .sat td:nth-child(4) {
     background-color: var(--secend-color);
-    
+
 }
-.content .left-side table .sat td:nth-child(2){
+
+.content .left-side table .sat td:nth-child(2) {
     background-color: var(--third-color);
 }
+
 .content .left-side table .sun td:not(:first-child) {
     width: calc(100% / 15);
     height: 30px;
     border-radius: 10px;
 }
+
 .content .left-side table .sun td:nth-child(4),
 .content .left-side table .sun td:nth-child(8),
 .content .left-side table .sun td:nth-child(11),
 .content .left-side table .sun td:nth-child(14),
-.content .left-side table .sun td:nth-child(15){
+.content .left-side table .sun td:nth-child(15) {
     background-color: var(--first-color);
 }
 
@@ -260,16 +272,124 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 50%;
-    background-color: var(--sec-color);
+    width: 45%;
     border-radius: 25px;
 }
+
 .content .right-side .box1 {
     padding: 10px;
     background-color: var(--sec-color);
+    width: 50%;
+    border-radius: 25px;
+    max-height: 100%;
 }
+
 .content .right-side .box1 .hed {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.content .right-side .box1 .hed .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #333333;
+    color: var(--para-color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .right-side .box1 .hed .logo {
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--para-color);
+}
+
+.content .right-side .box1 .id {
+    margin-top: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.content .right-side .box1 .id .text h3 {
+    font-size: 12px;
+    color: var(--para-color2);
+
+}
+
+.content .right-side .box1 .id .text p {
+    font-size: 14px;
+    color: var(--para-color);
+    margin-top: 5px;
+}
+
+.content .right-side .box1 .id button {
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--div-color);
+    color: var(--para-color);
+}
+
+.content .right-side .box1 .cards .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.content .right-side .box1 .cards .card .text h3 {
+    font-size: 12px;
+    color: var(--para-color2);
+}
+
+.content .right-side .box1 .cards .card .text p {
+    font-size: 16px;
+    color: var(--para-color);
+    margin-top: 5px;
+
+}
+
+.content .right-side .box1 .cards .card>p {
+    font-size: 12px;
+    color: var(--para-color2);
+    margin-top: 5px;
+}
+
+.content .right-side .box1 .details .card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5px;
+
+
+}
+
+.content .right-side .box1 .details .card .icon {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #333333;
+    color: var(--para-color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .right-side .box1 .details .card .text h3 {
+    font-size: 12px;
+    color: var(--para-color2);
+}
+
+.content .right-side .box1 .details .card .text p {
+    font-size: 16px;
+    color: var(--para-color);
+    margin-top: 5px;
 }
